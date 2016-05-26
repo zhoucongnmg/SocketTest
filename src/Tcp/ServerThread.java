@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.concurrent.BlockingQueue;
 
 /*
  * 服务器线程处理类
@@ -17,6 +18,7 @@ public class ServerThread extends Thread {
 
 	public ServerThread(Socket socket) {
 		this.socket = socket;
+
 	}
 	
 	//线程执行的操作，响应客户端的请求
